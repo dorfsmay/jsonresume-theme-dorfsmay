@@ -1,6 +1,5 @@
 module.exports = {
-  plugins: ["prettier"],
-  extends: ["eslint:recommended", "prettier", "plugin:prettier/recommended"],
+  extends: ["eslint:recommended"],
   env: {
     browser: true,
     node: true,
@@ -11,12 +10,9 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    //"indent": ["error", 2],
-    //"linebreak-style": ["error", "unix"],
-    //quotes: ["error", "double"],
-    //semi: ["error", "always"],
-    "no-unused-vars": 0,
-    "prefer-const": 0,
-    "prettier/prettier": "error",
+    "no-unused-vars": [
+      "error",
+      { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
+    ],
   },
 };

@@ -1,6 +1,6 @@
-const Handlebars = require("handlebars");
+//const Handlebars = require("handlebars");
 
-function render(resume) {
+function render(_resume) {
   return "<p>Hello !!</p>";
 }
 
