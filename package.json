@@ -1,0 +1,25 @@
+{
+  "name": "jsonresume-theme-dorfsmay",
+  "version": "0.0.1",
+  "description": "Simple JSON Resume theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/kelyvin/jsonresume-theme-dorfsmay#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelyvin/jsonresume-theme-dorfsmay.git"
+  },
+  "author": "Yves Dorfsman <yves@zioup.com>",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "bugs": {
+    "url": "https://github.com/kelyvin/jsonresume-theme-dorfsmay/issues"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}
