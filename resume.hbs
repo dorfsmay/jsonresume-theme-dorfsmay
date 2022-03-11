@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+    <style>
+    {{{css}}}
+    </style>
+  </head>
+
+  <body>
+    {{> header}}
+    <aside class="column-left">
+      {{> skills}}
+      {{> education}}
+      {{> languages}}
+    </aside>
+    <div class="column-right">
+      {{> work}}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{{#if resume.work.length}}
+<div>
+  {{#each resume.work}}
+  <section>
+    {{#if position}}
+      <h3>{{position}}</h3>
+    {{/if}}
+
+    {{#if name}}
+      <h4>{{name}} {{dateFormatYearMonth startDate}} - {{dateFormatYearMonth endDate}}</h4>
+    {{/if}}
+
+    {{#if summary}}
+      <p>{{summary}}</p>
+    {{/if}}
+
+    {{#if highlights.length}}
+    <p class="skill-list">
+        {{#each highlights}}
+        {{#if @index}}, {{/if}}
+        {{.}}
+        {{/each}}
+    </p>
+    {{/if}}
+  </section>
+  {{/each}}
+</div>
+{{/if}}

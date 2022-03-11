@@ -1,0 +1,13 @@
+{{#if resume.education.length}}
+<div>
+  <h3>Education</h3>
+  {{#each resume.education}}
+  <section>
+    <h4>{{#if institution}}{{institution}}{{/if}}</h4>
+    <div>{{#if studyType}}{{studyType}} - {{dateFormatYear endDate}}{{/if}}</div>
+    <div class="education-area">{{#if area}}{{area}} {{/if}}</div>
+  </section>
+  {{/each}}
+</div>
+{{/if}}
+

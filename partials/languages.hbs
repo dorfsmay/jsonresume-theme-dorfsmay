@@ -1,0 +1,10 @@
+{{#if resume.languages.length}}
+<div>
+  <h3>Languages</h3>
+  {{#each resume.languages}}
+    {{#if @index}} / {{/if}}
+      {{language}}
+  {{/each}}
+</div>
+{{/if}}
+
