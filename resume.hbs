@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+    {{{css}}}
+    </style>
   </head>
 
   <body>
-    <h1>hello</h1>
-    blah blah blah
+      {{> header}}
+
+  <aside class="column-left">
+  {{> skills}}
+  </aside>
   </body>
 </html>

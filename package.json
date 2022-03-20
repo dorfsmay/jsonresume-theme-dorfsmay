@@ -14,7 +14,8 @@
   "author": "Yves Dorfsman <yves@zioup.com>",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.7",
+    "sass": "^1.49.9"
   },
   "bugs": {
     "url": "https://github.com/kelyvin/jsonresume-theme-dorfsmay/issues"
