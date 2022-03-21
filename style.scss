@@ -1,4 +1,7 @@
 body {
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
   background: white;
 }
 
@@ -18,10 +21,12 @@ body {
 }
 
 .column-left {
+  width: 19%;
+  float: left;
   h3 {
     margin: 20px 0 0 0;
     text-transform: uppercase full-width;
-    font-weight:normal;
+    font-weight: normal;
   }
   h4 {
     margin: 10px 0 0 0;
@@ -31,8 +36,34 @@ body {
     padding-left: 12px;
     list-style-type: none;
   }
+  li {
+  }
 }
 
 .education-area {
   font-size: small;
+}
+
+.column-right {
+  width: 79%;
+  float: right;
+  h3 {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+  }
+  h4 {
+    font-size: large;
+    font-weight: 400;
+    margin: 0;
+  }
+  p {
+    font-size: small;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.skill-list {
+  font-family: monospace;
 }

@@ -6,14 +6,14 @@ const handlebars = require("handlebars");
 
 handlebars.registerHelper({
   dateFormatYear: function (date) {
-    return moment(date).format("YYYY");
+    return moment(date, 'YYYY-MM-DD').format("YYYY");
+    //return moment(moment(date).toISOString()).format("YYYY");
   },
 
-  /*
-dateFormatYearMonth: function (date) {
-    return moment(date).format('MM YYYY');
-}
-*/
+  dateFormatYearMonth: function (date) {
+    return moment(date, 'YYYY-MM-DD').format("MMM YYYY");
+    //return moment(moment(date).toISOString()).format("MMM YYYY");
+  },
 });
 
 function render(resume) {
