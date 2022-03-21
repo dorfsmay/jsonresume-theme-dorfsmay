@@ -1,14 +1,10 @@
 {{#if resume.languages.length}}
-<div class="container languages-container">
-  {{> title value="Languages"}}
-
-  <ul class="minimal">
-    {{#each resume.languages}}
-    <li>
-      <h6>{{language}} {{#if fluency}}<em>({{fluency}})</em>{{/if}}</h6>
-    </li>
-    {{/each}}
-  </ul>
+<div>
+  <h3>Languages</h3>
+  {{#each resume.languages}}
+    {{#if @index}} / {{/if}}
+      {{language}}
+  {{/each}}
 </div>
 {{/if}}
 

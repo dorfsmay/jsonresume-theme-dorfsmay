@@ -1,7 +1,8 @@
 {{#if resume.skills.length}}
-<div class="column-left">
+<div>
+  <h3>Skills</h3>
   {{#each resume.skills}}
-  <section class="container">
+  <section>
     {{#if name}}
       <h4 class="column-left">{{name}}</h4>
     {{/if}}
@@ -9,7 +10,7 @@
       <ul class="minimal">
         {{#each keywords}}
         <li>
-          <h6>{{.}}</h6>
+          {{.}}
         </li>
         {{/each}}
       </ul>

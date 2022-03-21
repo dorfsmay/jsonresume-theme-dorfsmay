@@ -1,7 +1,20 @@
 const fs = require("fs");
 const path = require("path");
 const sass = require("sass");
+const moment = require("moment");
 const handlebars = require("handlebars");
+
+handlebars.registerHelper({
+  dateFormatYear: function (date) {
+    return moment(date).format("YYYY");
+  },
+
+  /*
+dateFormatYearMonth: function (date) {
+    return moment(date).format('MM YYYY');
+}
+*/
+});
 
 function render(resume) {
   const PARTIALS_DIR = path.join(__dirname, "partials");
@@ -16,7 +29,6 @@ function render(resume) {
 
   const template = fs.readFileSync(path.join(__dirname, "resume.hbs"), "utf-8");
   const css = sass.compile(path.join(__dirname, "style.scss")).css;
-  console.log(css);
   return handlebars.compile(template)({ resume: resume, css: css });
 }
 
